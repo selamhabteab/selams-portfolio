@@ -34,28 +34,36 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Learn Academy",
+    location: "Remote",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Competed 500+ hours of full stack coding using JavaScript, React.JS, and Ruby on Rails",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2020",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Front-End Developer at Starshot Technologies",
+    location: "Remote",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Completed over 100 hours of front-end coding for a consumer-facing web application. Implemented new features and styling using EmberJS, Post CSS, and Tailwind CSS, enhancing the visual appeal and functionality of the web application.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2020",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Full-Stack Developer at Scientist.com Software Services",
+    location: "Remote",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Developed and maintained high-quality code for web applications using React, Redux, Ruby on Rails, HTML, CSS, JavaScript, and Samvera, contributing to the creation of robust and scalable solutions.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2022",
+  },
+  {
+    title: "UX Developer at Fox",
+    location: "Remote",
+    description:
+      "Developed and optimized performant, maintainable, and testable code using React, Redux, Node.js, and TypeScript, enhancing application efficiency and the user experience.",
+    icon: React.createElement(FaReact),
+    date: "2023",
   },
 ] as const;
 
