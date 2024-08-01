@@ -8,9 +8,11 @@ import { HiDownload } from 'react-icons/hi';
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from '../lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
     const { ref } = useSectionInView("Home", 0.5);
+    const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
     
     return (
         <section ref={ref} className="mb-28 max-w-[50rem] text-center scroll-mt-[100rem]" id="home">
@@ -80,19 +82,23 @@ export default function Intro() {
                     <Link 
                         href="#contact"
                         className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition shadow-xl"
+                        onClick={()=> {
+                            setActiveSection("Contact");
+                            setTimeOfLastClick(Date.now());
+                        }}
                     > 
                         Contact Me Here <span className="group-hover:translate-x-1 transition">✉️</span>
                     </Link>
 
-                    <a className="group bg-white px-7 py-3 flex items-center gap-2 rounded shadow-xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10" href="/resume.pdf" download> 
+                    <a className="group bg-white px-7 py-3 flex items-center gap-2 rounded shadow-xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack" href="/resume.pdf" download> 
                         Download Resume <HiDownload className="group-hover:translate-y-1 transition" />
                     </a>
 
-                    <a className="bg-white p4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10 h-[35px] w-[35px] justify-center" href="https://www.linkedin.com/in/selamhabteab/" target="_blank"> 
+                    <a className="bg-white p4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack h-[35px] w-[35px] justify-center" href="https://www.linkedin.com/in/selamhabteab/" target="_blank"> 
                         <BsLinkedin />
                     </a>
 
-                    <a className="bg-white p4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10 h-[35px] w-[35px] justify-center" href="https://github.com/selamhabteab" target="_blank">
+                    <a className="bg-white p4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack h-[35px] w-[35px] justify-center" href="https://github.com/selamhabteab" target="_blank">
                         <FaGithubSquare />
                     </a>
 
