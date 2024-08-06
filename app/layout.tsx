@@ -3,13 +3,14 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from './components/header'
 import ActiveSectionContextProvider from '@/context/active-section-context'
-//notes: root of app located in layout file.
+import { Toaster } from 'react-hot-toast'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "Selam Habteab | Portfolio",
   description: 'Selam Habteab is a software developer with four years of experience.',
-  generator: 'Next.js',
+  generator: 'Next.ejs',
   keywords: ['consultant', 'contractor', 'software developer', 'black', 'React'],
   creator: 'Selam Habteab',
 }
@@ -27,6 +28,7 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
           <Header />
           {children} 
+          <Toaster position="bottom-center" />
         </ActiveSectionContextProvider>
       </body>
     </html>
