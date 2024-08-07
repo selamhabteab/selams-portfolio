@@ -64,7 +64,7 @@ export default function Intro() {
                     >
                     
 
-                        <span className="font-bold">Hello, I'm Selam.</span> As a software developer I am committed to the continuous learning style of building web applications. I have experience with full-stack development but <span className="font-bold">I focus on front-end development with ReactJS.</span>  I strive for quality code, and my best output comes from collaboration, especially in agile environments. I practice test-driven development and follow web accessibility guidelines (WCAG 2.1).
+                        <span className="font-bold">Hello, I&apos;m Selam.</span> As a software developer I am committed to the continuous learning style of building web applications. I have experience with full-stack development but <span className="font-bold">I focus on front-end development with ReactJS.</span>  I strive for quality code, and my best output comes from collaboration, especially in agile environments. I practice test-driven development and follow web accessibility guidelines (WCAG 2.1).
                     </motion.h1>
                 </div> 
 

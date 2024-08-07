@@ -37,8 +37,8 @@ export default function About() {
       </p>
 
       <p>
-        When I'm not coding, I enjoy a lot of movement whether it be dancing, hiking, or playing with my dog. In moments of stillness, I enjoy creative writing and reading. 
-        I also enjoy <span className="font-medium">learning new things</span>. I am currently learning about <span className="font-medium">TBD</span>. I'm also learning how to play my ukele.
+        When I&apos;m not coding, I enjoy a lot of movement whether it be dancing, hiking, or playing with my dog. In moments of stillness, I enjoy creative writing and reading. 
+        I also enjoy <span className="font-medium">learning new things</span>. I am currently learning about <span className="font-medium">TBD</span>. I&apos;m also learning how to play my ukele.
       </p>
   </motion.section>
 )}
