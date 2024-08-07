@@ -65,10 +65,6 @@ export default function Intro() {
                     
 
                         <span className="font-bold">Hello, I'm Selam.</span> As a software developer I am committed to the continuous learning style of building web applications. I have experience with full-stack development but <span className="font-bold">I focus on front-end development with ReactJS.</span>  I strive for quality code, and my best output comes from collaboration, especially in agile environments. I practice test-driven development and follow web accessibility guidelines (WCAG 2.1).
-                        {/* <span className="font-bold">full-stack developer</span> with{" "}
-                        <span className="font-bold">8 years</span> of experience. I enjoy
-                        building <span className="italic">sites & apps</span>. My focus is{" "}
-                        <span className="underline">React (Next.js)</span>. */}
                     </motion.h1>
                 </div> 
 
@@ -81,7 +77,7 @@ export default function Intro() {
                 >
                     <Link 
                         href="#contact"
-                        className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition shadow-xl"
+                        className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
                         onClick={()=> {
                             setActiveSection("Contact");
                             setTimeOfLastClick(Date.now());
@@ -90,15 +86,15 @@ export default function Intro() {
                         Contact Me Here <span className="group-hover:translate-x-1 transition">✉️</span>
                     </Link>
 
-                    <a className="group bg-white px-7 py-3 flex items-center gap-2 rounded shadow-xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack" href="/resume.pdf" download> 
+                    <a className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10" href="/resume.pdf" download> 
                         Download Resume <HiDownload className="group-hover:translate-y-1 transition" />
                     </a>
 
-                    <a className="bg-white p4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack h-[35px] w-[35px] justify-center" href="https://www.linkedin.com/in/selamhabteab/" target="_blank"> 
+                    <a className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60" href="https://www.linkedin.com/in/selamhabteab/" target="_blank"> 
                         <BsLinkedin />
                     </a>
 
-                    <a className="bg-white p4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack h-[35px] w-[35px] justify-center" href="https://github.com/selamhabteab" target="_blank">
+                    <a className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60" href="https://github.com/selamhabteab" target="_blank">
                         <FaGithubSquare />
                     </a>
 

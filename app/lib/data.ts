@@ -2,6 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { DiRubyRough } from "react-icons/di";
 import toDoApp from "@/public/ToDoApp.png";
 import commBoardApp from "@/public/CommunityBoardApp.png";
 
@@ -54,7 +55,7 @@ export const experiencesData = [
     location: "Remote",
     description:
       "Developed and maintained high-quality code for web applications using React, Redux, Ruby on Rails, HTML, CSS, JavaScript, and Samvera, contributing to the creation of robust and scalable solutions.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(DiRubyRough),
     date: "2022",
   },
   {
