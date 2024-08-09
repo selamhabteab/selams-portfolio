@@ -62,9 +62,14 @@ export default function Intro() {
                         initial={{ opacity: 0, y: 100 }}
                         animate={{ opacity: 1, y: 0 }}
                     >
-                    
-
-                        <span className="font-bold">Hello, I&apos;m Selam.</span> As a software developer I am committed to the continuous learning style of building web applications. I have experience with full-stack development but <span className="font-bold">I focus on front-end development with ReactJS.</span>  I strive for quality code, and my best output comes from collaboration, especially in agile environments. I practice test-driven development and follow web accessibility guidelines (WCAG 2.1).
+                        <span className="font-bold">Hello, I&apos;m Selam.</span> As an experienced software developer with 4 years of professional experience, I am committed to the continuous learning style of building web applications with the latest technology. I focus on <span className="font-bold">front-end development</span> with <span className="underline">React, Typescript, Next.JS and Tailwind CSS.</span> I strive for quality code, and my best output comes from collaboration, especially in agile environments. I practice test-driven development and follow web accessibility guidelines (WCAG 2.1).
+                    </motion.h1>
+                    <motion.h1 
+                        className="mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-2xl"
+                        initial={{ opacity: 0, y: 100 }}
+                        animate={{ opacity: 1, y: 0 }}
+                    >
+                        <span className="font-bold">Great news, I&apos;m available for work!</span>
                     </motion.h1>
                 </div> 
 

@@ -19,8 +19,7 @@ export default function Projects() {
                 </React.Fragment>
             ))}
         </div>
-        <div></div>
-        <div></div>
+        <p className="text-xl font-medium capitalize mt-4 text-center">There&apos;s more to come!</p>
     </section>
 
   )

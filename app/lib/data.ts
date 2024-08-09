@@ -70,18 +70,20 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Task List",
+    title: "To-Do List",
     description:
       "A To-Do list application for users to track, edit, and delete tasks.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    tags: ["React", "Redux", "Bootstrap"],
     imageUrl: toDoApp,
+    link: "https://github.com/selamhabteab/To-do-app",
   },
   {
     title: "Commuity Blog",
     description:
       "A community blog for multiple users to communicate via posts and comments. The application enables community members to have discourse in their choice of topics.",
-    tags: ["React", "Next.js", "Redux", "Tailwind", "Framer"],
+    tags: ["React", "Redux", "Reactstrap", "Jest"],
     imageUrl: commBoardApp,
+    link: "https://github.com/selamhabteab/community-board",
   },
 ] as const;
 
